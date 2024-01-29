@@ -9,6 +9,7 @@
   dotenv
   mongoose
 **
+
 *to install packages use:* 
 ```npm install discord.js dotenv mongoose```
 
