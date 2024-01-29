@@ -25,6 +25,6 @@
 
 ```https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER``` 
 
-**And that's it!
+**And that's it!**
 
 Made with ❤️ by lmaoleonix**
