@@ -14,4 +14,6 @@
 
 **3. Update the .env file with your credentials and logins and other stuff.**
 
+**YOU ALSO MUST CHANGE THE .ENV.EXAMPLE TO .ENV!!!!!**
+
 4.Do ```node index.js``` and that's it!
