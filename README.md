@@ -9,7 +9,8 @@
   dotenv
   mongoose
 **
-*to install packages use:* ```npm install discord.js dotenv mongoose```
+*to install packages use:* 
+```npm install discord.js dotenv mongoose```
 
 **3. Update the .env file with your credentials and logins and other stuff.**
 
