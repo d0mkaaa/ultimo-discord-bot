@@ -27,4 +27,4 @@
 
 **And that's it!**
 
-Made with ❤️ by lmaoleonix**
+**Made with ❤️ by lmaoleonix**
