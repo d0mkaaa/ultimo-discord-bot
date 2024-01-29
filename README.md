@@ -4,13 +4,8 @@
 
 **1. Clone it or download it as a zip.**
 
-**2. Install these required dependecies: 
-  discord.js
-  dotenv
-  mongoose
-**
-
-*to install packages use:* 
+**2. Install these required dependecies: discord.jsdotenv mongoose**
+*to install packages use:*
 ```npm install discord.js dotenv mongoose```
 
 **3. Update the .env.example file with your credentials and logins and other stuff.**
