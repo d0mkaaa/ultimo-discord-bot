@@ -24,4 +24,6 @@
 
 **And that's it!**
 
+***Please star my project to show some love!***
+
 **Made with ❤️ by lmaoleonix**
