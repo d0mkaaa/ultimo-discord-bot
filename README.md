@@ -18,9 +18,9 @@
 
 **Steps to adding the bot do your Discord server:**
 
-**1. Use this link but just update the YOUR_CLIENT_ID and PERMISSIONS_INTERGER :**
+**1. Use this link but just update the YOUR_BOTS_CLIENT_ID and PERMISSIONS_INTERGER :**
 
-```https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER``` 
+```https://discord.com/oauth2/authorize?client_id=YOUR_BOTS_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER``` 
 
 **And that's it!**
 
