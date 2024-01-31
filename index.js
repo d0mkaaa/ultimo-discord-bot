@@ -1,8 +1,9 @@
 const fs = require('fs');
+const path = require('path');
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const logger = require('./logger'); 
+const logger = require('./logger');
 require('dotenv').config();
 
 const client = new Client({
@@ -12,17 +13,31 @@ const client = new Client({
 client.commands = new Collection();
 const commands = [];
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    if (command.data) {
-        client.commands.set(command.data.name, command);
-        commands.push(command.data.toJSON());
-        logger('info', `Command loaded: ${command.data.name}`);
-    } else {
-        logger('warn', `Skipped loading '${file}' as it does not export a 'data' property.`);
+function loadCommands(directory) {
+    const commandFiles = fs.readdirSync(directory).filter(file => file.endsWith('.js'));
+
+    for (const file of commandFiles) {
+        const filePath = path.join(directory, file);
+        const command = require(filePath);
+        if (command.data) {
+            client.commands.set(command.data.name, command);
+            commands.push(command.data.toJSON());
+            logger('info', `Command loaded: ${command.data.name}`);
+        } else {
+            logger('warn', `Skipped loading '${file}' as it does not export a 'data' property.`);
+        }
     }
+
+    const subdirectories = fs.readdirSync(directory, { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => dirent.name);
+
+    subdirectories.forEach(subdir => {
+        loadCommands(path.join(directory, subdir));
+    });
 }
+
+loadCommands(path.join(__dirname, 'commands'));
 
 const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN);
 
