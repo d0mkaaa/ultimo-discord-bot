@@ -31,3 +31,19 @@ Please star my project to show some love!
 And that's it!
 
 </details>
+
+<details>
+<summary><strong>Commands</strong></summary>
+
+## Commands
+
+Below are the commands available for use with this bot:
+
+- **ban**: Bans a user from the server.
+- **timeout**: Temporarily removes a user's ability to interact in the server.
+- **kick**: Kicks a user from the server.
+- **clear**: Clears a specified number of messages from a channel. (Limit is 100 due to the Discord's API.)
+- **refresh**: Refreshes the commands list to include any new commands added. Note: This does not refresh any new code changes.
+- **ping**: Checks the bot's response time.
+
+</details>
