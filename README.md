@@ -1,29 +1,33 @@
-**Welcome to the Ultimo Repo!**
+# Welcome to the Ultimo Repo!
 
-*Steps to turning the bot on:*
+Made with ❤️ by lmaoleonix
 
-**1. Clone it or download it as a zip.**
+Please star my project to show some love!
 
-**2. Install these required dependecies: discord.jsdotenv mongoose**
-*to install packages use:*
-```npm install discord.js dotenv mongoose moment```
+<details>
+<summary><strong>Tutorial</strong></summary>
 
-**3. Update the .env.example file with your credentials and logins and other stuff.**
+## Steps to turning the bot on:
 
-**YOU ALSO MUST CHANGE THE .env.example TO .env !!!!!**
+1. **Clone it or download it as a zip.**
 
-4.Do ```node index.js``` and that's it!
+2. **Install these required dependencies: discord.js, dotenv, mongoose**
+   
+   To install packages, use: ```npm install discord.js dotenv mongoose moment```
+
+3. **Update the .env.example file with your credentials, logins, and other required information.**
+
+**IMPORTANT: You must change the .env.example filename to .env!**
+
+4. Execute the command below to start the bot: ```node index.js```
 
 
+## Steps to adding the bot to your Discord server:
 
-**Steps to adding the bot do your Discord server:**
+1. **Use the following link, making sure to update YOUR_BOTS_CLIENT_ID and PERMISSIONS_INTEGER with your bot's client ID and the permissions integer, respectively:**
 
-**1. Use this link but just update the YOUR_BOTS_CLIENT_ID and PERMISSIONS_INTERGER :**
+```https://discord.com/oauth2/authorize?client_id=YOUR_BOTS_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER```
 
-```https://discord.com/oauth2/authorize?client_id=YOUR_BOTS_CLIENT_ID&scope=bot&permissions=PERMISSIONS_INTEGER``` 
+And that's it!
 
-**And that's it!**
-
-***Please star my project to show some love!***
-
-**Made with ❤️ by lmaoleonix**
+</details>
